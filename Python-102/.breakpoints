@@ -1,0 +1,20 @@
+{
+  "files": {
+    "4_list.py": [
+      {
+        "id": "1a3ebc87-2419-4fec-b806-3da9a7a6a7d7",
+        "line": 20,
+        "version": 700,
+        "index": 595
+      }
+    ],
+    "Cacho/dice_roll.py": [
+      {
+        "id": "47e8d0f0-4330-4dd6-afb0-b71c4481aa83",
+        "line": 9,
+        "version": 21,
+        "index": 71
+      }
+    ]
+  }
+}
