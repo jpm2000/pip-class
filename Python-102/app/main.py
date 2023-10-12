@@ -3,24 +3,25 @@ import read_csv
 import charts
 
 def run():
-  data = read_csv.read_csv('./app/data.csv')
+  data = read_csv.read_csv('data.csv')
   data = list(filter(lambda item: item['Continent'] == 'South America', data))
 
   labels = list(map(lambda y: y['Country/Territory'], data))
   values = list(map(lambda x: x['World Population Percentage'], data))
   charts.generate_pie_chart(labels, values)
   
-  #country = input('type country ')
-  #result = utils.population_by_country(data, country)
+  country = input('type country ')
+  print(country)
+  result = utils.population_by_country(data, country)
 
-  #if len(result) > 0:
-    #country = result[0]
-    #labels, values = utils.get_population(country)
-    #charts.generate_bar_chart(labels, values)
+  if len(result) > 0:
+    country = result[0]
+    print(country)
+    labels, values = utils.get_population(country)
+    charts.generate_bar_chart(country['Country/Territory'], labels, values)
     
 if __name__ == '__main__':
   run()
-
 
 '''
 import read_csv
@@ -36,6 +37,7 @@ def run():
 if __name__ == '__main__':
   run()
 '''
+
 
 '''
 Pasos

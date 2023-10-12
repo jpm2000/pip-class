@@ -9,7 +9,7 @@ def population_by_country(data, country):
 
 # La idea de utils es traer la información que necesitamos para graficar, obteniendo la población. Se supone que con country_dict ya está entrando el diccionario del país de donde quiero sacar la info. Se pregunta por la columna tal cual como está en el archivo '2022 Population'...
 
-'''
+
 def get_population(country_dict):
   population_dict = {
     '2022': int(country_dict['2022 Population']),
@@ -25,4 +25,3 @@ def get_population(country_dict):
   labels = population_dict.keys()
   values = population_dict.values()
   return labels, values
-'''
