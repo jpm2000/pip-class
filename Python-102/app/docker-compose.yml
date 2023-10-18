@@ -1,0 +1,13 @@
+#Desde donde se va a iniciar el contenedor
+
+services:
+  app-csv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+
+
+# Es mucho mas sofisticado y rapido que una maquina virtual
+# Con volumes puedo enlazar el codigo para no tener que hacer cambios, entrar por medio de build y up cada vez
